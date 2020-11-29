@@ -7,10 +7,12 @@ export const ctx = canvas.getContext("2d")
 
 function main() {
     PageSetup(canvas)
-    const someCard = new Card(ctx, 'Hello World', 100, 100)
+    const someCard = new Card(ctx, 'Hello World', 100, 100, 300, 100)
     someCard.maxWidth = 200
     someCard.fontSize = 55
-    someCard.drawText()
+    someCard.borderColor = 'blue'
+    someCard.textAlign = 'center'
+    someCard.drawCard()
 }
 
 main()
